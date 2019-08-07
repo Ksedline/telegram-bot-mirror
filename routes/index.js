@@ -10,7 +10,7 @@ const sendRequest = function(token, action, form, callback){
     if(err){
       return callback({ ok: false, err: err })
     }
-    callback({ ok: true, res: res })
+    callback({ ok: true, res: res.body })
   })
 }
 
