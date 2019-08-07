@@ -24,4 +24,6 @@ router.get(`/bot:token/:action`, (req, res) => {
   })
 })
 
+router.get('/:query', (req, res) => res.redirect('/'))
+
 module.exports = router
