@@ -17,7 +17,7 @@ const {
 const IN_PROD = NODE_ENV === 'production'
 
 if(IN_PROD){
-  app.use(enforce.HTTPS())
+  app.use(enforce.HTTPS({ trustProtoHeader: true }))
 }
 
 app.use('/', require('./routes/index'))
