@@ -14,7 +14,7 @@ const sendRequest = function(token, action, form, callback){
   })
 }
 
-router.get(`/bot:token/:action`, (req, res) => {
+const handler = (req, res) => {
   const token = req.params.token
   const action = req.params.action
   const form = req.query
@@ -22,7 +22,10 @@ router.get(`/bot:token/:action`, (req, res) => {
   sendRequest(token, action, form, function(reqRes){
     res.json(reqRes)
   })
-})
+}
+
+router.get(`/bot:token/:action`, (req, res) => handler)
+router.post(`/bot:token/:action`, (req, res) => handler)
 
 router.get('/:query', (req, res) => res.redirect('/'))
 
