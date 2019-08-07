@@ -24,8 +24,8 @@ const handler = (req, res) => {
   })
 }
 
-router.get(`/bot:token/:action`, (req, res) => handler)
-router.post(`/bot:token/:action`, (req, res) => handler)
+router.get(`/bot:token/:action`, handler)
+router.post(`/bot:token/:action`, handler)
 
 router.get('/:query', (req, res) => res.redirect('/'))
 
