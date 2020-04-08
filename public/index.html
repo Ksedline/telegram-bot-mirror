@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegram bot API mirror</title>
   </head>
   <body>
-
     <div class="container my-5">
       <!-- <pre> -->
       <h1><u>Telegram bot API mirror</u></h1>
-      <br>
-      <br>
+      <br />
+      <br />
 
       <h2>Usage</h2>
       <p>
-        In the Telegram API request URL replace `https://api.telegram.org` with `https://vladcyb-bot.herokuapp.com`
-      </p>
-
-      <h2>Example</h2>
-      <p>
-        <a href="https://vladcyb-bot.herokuapp.com/bot513263491:AAENuSRO00tTKQAq3AO3ETu6nf7QLHkwnZU/sendMessage?text=Hi&chat_id=159619537">
-          https://vladcyb-bot.herokuapp.com/bot513263491:AAENuSRO00tTKQAq3AO3ETu6nf7QLHkwnZU/sendMessage?text=Hi&chat_id=159619537
-        </a>
+        In the Telegram API request URL replace `https://api.telegram.org` with
+        `<span id="replace-with"></span>`
       </p>
     </div>
-
-
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('replace-with').innerText = window.origin;
+    });
+  </script>
 </html>

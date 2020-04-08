@@ -1,5 +1,5 @@
 # telegram-bot-mirror
-A mirror for Telegram bot API
+This is a fork of a mirror for Telegram bot API made by [vladcyb](https://github.com/vladcyb)
 
 http://vladcyb-bot.herokuapp.com
 
